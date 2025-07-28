@@ -3,8 +3,8 @@ import { createTodo, getTodo, deleteTodo } from '../controllers/todoController.j
 
 const router = express.Router();
 
-router.post('/', createTodo);
-router.get('/', getTodo);
+router.post('/post', createTodo);
+router.get('/get', getTodo);
 router.delete('/:id', deleteTodo);
 
 export default router;
